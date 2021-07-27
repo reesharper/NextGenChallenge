@@ -1,0 +1,33 @@
+{
+  "name": "nextgenchallenge",
+  "version": "1.0.0",
+  "description": "Next Gen HQ backend challenge",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reesharper/NextGenChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reesharper/NextGenChallenge/issues"
+  },
+  "homepage": "https://github.com/reesharper/NextGenChallenge#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.8",
+    "node": "^16.5.0",
+    "nodemon": "^2.0.12",
+    "sqlite3": "^5.0.2"
+  }
+}
