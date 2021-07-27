@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const User = require('./users-model')
-// const restricted = require("../auth/restricted-middleware.js");
+const restricted = require("../auth/restricted-middleware.js");
 // const restrictRole = require('../auth/rolerestricted-middleware.js')
 
 
@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
     .catch(err => res.send(err));
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", restricted, (req, res) => {
   User.getById(req.params.id)
     .then(posts => {
       res.json(posts);
